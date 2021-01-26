@@ -12,11 +12,6 @@ class SizeConfig {
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
     orientation = _mediaQueryData.orientation;
-    // On iPhone 11 defailt size is almost = 10
-    // So if the screen size varies our defaultSize should also vary
-    // defaultSize = orientation == Orientation.landscape
-    //     ? screenHeight * 0.024
-    //     : screenWidth * 0.024;
   }
 
   static double getProportionateScreenHeight(double inputHeight) {
